@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      border: 1px solid black;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid black;
+    }
+
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .header .logo div {
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      margin-right: 5px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 5px;
+    }
+
+    .header .controls div {
+      width: 70px;
+      height: 30px;
+      background-color: red;
+      margin-left: 5px;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+    }
+
+    .left-panel {
+      flex: 1;
+      border-right: 1px solid black;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .left-panel div {
+      border: 1px solid black;
+      height: 30px;
+    }
+
+    .center-panel {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid black;
+    }
+
+    .center-panel .grid {
+      display: flex;
+      gap: 10px;
+    }
+
+    .center-panel .grid div {
+      border: 1px solid black;
+      height: 100px;
+      width: 50px;
+    }
+
+    .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .right-panel div {
+      border: 1px solid black;
+      height: 100px;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-top: 1px solid black;
+    }
+
+    .footer .icons {
+      display: flex;
+      gap: 5px;
+    }
+
+    .footer .icons div {
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+
+    .footer .copyright {
+      text-align: center;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <div></div>
+        <span>FLEXBOX</span>
+      </div>
+      <div class="controls">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left-panel">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="center-panel">
+        <div class="grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="icons">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="copyright">
+        <span>Copyright Flexbox</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

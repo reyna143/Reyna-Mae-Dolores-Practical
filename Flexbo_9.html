@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    body {
+        padding: 4px;
+        height: calc(100vh - 8px);
+    }
+
+    .border {
+        border: 1px solid black;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .g-5 {
+        gap: 5px;
+    }
+
+    .g-6 {
+        gap: 6px;
+    }
+
+    .g-7 {
+        gap: 7px;
+    }
+
+    .p-4 {
+        padding: 4px;
+    }
+
+    .p-3 {
+        padding: 3px;
+    }
+
+    .p-2 {
+        padding: 2px
+    }
+
+    .f-grow-1 {
+        flex-grow: 1;
+    }
+
+    .f-grow-2 {
+        flex-grow: 2;
+    }
+
+    .margin-2 {
+        margin: 2px;
+    }
+
+    .margin-3 {
+        margin: 3px;
+    }
+
+    .margin-4 {
+        margin: 4px;
+    }
+
+    .f-grow-3 {
+        flex-grow: 3;
+    }
+
+    .f-grow-4 {
+        flex-grow: 4;
+    }
+
+
+    .align-content-start {
+        align-content: flex-start;
+    }
+
+    .align-content-end {
+        align-content: flex-end;
+    }
+
+    .align-content-center {
+        align-content: center;
+    }
+
+    .align-items-start {
+        align-items: flex-start;
+    }
+
+    .align-items-end {
+        align-items: flex-end;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    .align-items-stretch {
+        align-items: stretch;
+    }
+
+    .justify-content-start {
+        justify-content: flex-start;
+    }
+
+    .justify-content-end {
+        justify-content: flex-end;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-space-between {
+        justify-content: space-between;
+    }
+
+    .justify-content-space-around {
+        justify-content: space-around;
+    }
+
+    .justify-items-start {
+        justify-items: flex-start;
+    }
+
+    .justify-items-end {
+        justify-items: flex-end;
+    }
+
+    .justify-items-center {
+        justify-items: center;
+    }
+
+    .f-direction-column {
+        flex-direction: column;
+    }
+
+    .f-direction-row {
+        flex-direction: row;
+    }
+
+    .nvbox {
+        height: 4.3vh;
+        width: 1.8vw;
+        background-color: red;
+        border: none;
+    }
+
+    .nvflex {
+        margin-right: auto;
+    }
+
+    .nnvvboxs {
+        width: 2.5vw;
+        border: none;
+        background-color: red;
+    }
+
+    .ftrred {
+        width: 2.5vw;
+        height: 5.6vh;
+        border: none;
+        background-color: red;
+    }
+
+    .ftr3 {
+        margin-right: auto;
+    }
+
+    .divftrr {
+        height: 2.5vh;
+        width: 1.3vw;
+        border: none;
+        background-color: red;
+    }
+
+    .mmbox {
+        height: 20vh;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .boxxx {
+        height: 5vh;
+        width: 14vw;
+    }
+</style>
+
+<body class="g-5 d-flex f-direction-column f ">
+    <div class="nav border p-2 d-flex g-5">
+        <div class="nvbox border"></div>
+        <div class="nvflex align-items-center align-content-center">FLEXBOX</div>
+
+        <div class="nvvbox3 d-flex g-5 p-4">
+            <div class="nnvvboxs border"></div>
+            <div class="nnvvboxs border"></div>
+            <div class="nnvvboxs border"></div>
+            <div class="nnvvboxs border"></div>
+        </div>
+    </div>
+
+    <div class="main d-flex f-grow-1 g-5">
+
+        <div class="aside border d-flex g-5 p-4">
+            <div class="boxasd10 d-flex g-5 f-direction-column">
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+                <div class="boxxx border"></div>
+            </div>
+        </div>
+
+        <div class="mmain f-grow-1 g-5 d-flex f-direction-column">
+            <div class="mmm1 d-flex g-5 f-grow-1">
+                <div class="body border f-grow-1 d-flex p-4">
+                    <div class="mmmdd g-7 d-flex f-grow-1 f-direction-column align-items-stretch align-items-center">
+                        <div class="mmbox border"></div>
+                        <div class="mmbox border"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer border d-flex">
+                <div class="ftr3 p-4 d-flex g-5 align-content-center ">
+                    <div class="ftrred border"></div>
+
+                    <div class="ftrtxt  f-grow-1 align-content-center">
+                        <div class="ftrflex">FLEXBOX</div>
+                        <div class="ftrcopy">COPYRIGHT FLEXBOX</div>
+                    </div>
+                </div>
+
+                <div class="ftrm5 d-flex g-5 p-4 align-content-center align-items-center">
+                    <div class="divftrr border border"></div>
+                    <div class="divftrr border border"></div>
+                    <div class="divftrr border border"></div>
+                    <div class="divftrr border border"></div>
+                    <div class="divftrr border border"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
